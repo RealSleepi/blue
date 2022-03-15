@@ -238,7 +238,7 @@ input[type=URL] {
   <a href="#" onclick="disabledFunction()">Pricing</a>
   <a href="#" onclick="disabledFunction()">Setup</a>
   <a href="#" onclick="disabledFunction()">Support</a>
-  <a href="/credits.html">Credits</a>
+  <a href="/credits">Credits</a>
 </div>
 <div class=animated>
 <h1 class="title">Ult&#173;ravi&#173;ol&#173;et</h1>
@@ -270,6 +270,18 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
 }
 </script>
+<script>
+        prSet("ultraviolet");
+    </script>
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.navigator.serviceWorker.register('/sw.js', {
+                scope: __uv$config.prefix,
+            });
+        };
+    </script>
 
 </body>
 </html>
