@@ -129,12 +129,6 @@ h1.title {
   to {bottom: 0; opacity: 0;}
 }
 
-.center {
-  line-height: 100px;
-  height: 100px;
-  text-align: center;
-}
-
 .center p {
   line-height: 1.5;
   display: inline-block;
@@ -197,6 +191,30 @@ h1.title {
 .btn:hover {
   color: #8dd4f8;
 }
+
+div.animated {
+  position: relative;
+  animation: mymove 1s;
+}
+
+@keyframes mymove {
+  from {bottom: 40px;}
+  to {bottom: 0px;}
+}
+
+.center {
+  line-height: 100px;
+  height: 100px;
+  text-align: center;
+  position: relative;
+  animation: mymove 1s;
+}
+
+a.hide:link, a.hide:visited {
+  color: #171d20;
+  background-color: #171d20;
+}
+
 </style>
 </head>
 <body>
@@ -213,11 +231,12 @@ h1.title {
   <a href="#" onclick="disabledFunction()">Support</a>
   <a href="/credits.html">Credits</a>
 </div>
+<div class=animated>
 <h1 class="title">Blue</h1>
 <h1 class="italic">Welcome back!</h1>
 <h1 class="italic">You have ∞ days left in your subscription.</h1>
 <h1> </h1>
-
+</div>
 <div id="snackbar">Error: Temporarily Disabled</div>
 <script>
 function disabledFunction() {
@@ -227,10 +246,12 @@ function disabledFunction() {
 }
 </script>
 <div class="center">
-  <button class="button" style="vertical-align:middle"><span>Open Ultraviolet </span></button>
+  <a class="hide" href="/uv">
+  <button class="button" style="vertical-align:middle" href="/uv"><span>Open Ultraviolet </span></button>
+  </a>
   <button class="button" style="vertical-align:middle" onclick="disabledFunction()"><span>Open Womginx </span>
 </button>
-  <button class="button" style="vertical-align:middle"><span>Open Spotify </span></button>
+  <button class="button" style="vertical-align:middle" onclick="disabledFunction()"><span>Open Spotify </span></button>
 </div>
 <script>
 function openNav() {
