@@ -246,8 +246,10 @@ input[type=URL] {
 <h1 class="italic">Support for YouTube, Reddit, Spotify and more.</h1>
 </div>
 <div class="center" id="pr-form">
-
 <input type="URL" id="pr-url" spellcheck="false" autocomplete="off" placeholder="Enter target URL here!">
+<a class="hide" href="/uvnav">
+<button class="button" style="vertical-align:middle" href="#"><span>Go! </span></button>
+</a>
 </div>
 <div id="snackbar">Error: Temporarily Disabled</div>
 <script>
