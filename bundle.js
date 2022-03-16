@@ -7,10 +7,10 @@ console.log(path.resolve(path.dirname(decodeURI(new URL(import.meta.url).pathnam
 
 webpack({
     mode: 'none',
-    entry: path.join(__dirname, './rewrite/index.js'),
+    entry: path.join(__dirname, '/index.js'),
     output: {
         path: __dirname,
-        filename: './uv/uv.bundle.js',
+        filename: '/uv.bundle.js',
     }
 }, (err, i) => 
     console.log(!err ? 'Ultraviolet bundled!' : e)
