@@ -10,7 +10,7 @@ webpack({
     entry: path.join(__dirname, './rewrite/index.js'),
     output: {
         path: __dirname,
-        filename: './lib/uv.bundle.js',
+        filename: './uv/uv.bundle.js',
     }
 }, (err, i) => 
     console.log(!err ? 'Ultraviolet bundled!' : e)
