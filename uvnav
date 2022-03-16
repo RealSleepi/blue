@@ -247,7 +247,7 @@ input[type=URL] {
 </div>
 <div class="center" id="pr-form">
 <input type="URL" id="pr-url" spellcheck="false" autocomplete="off" placeholder="Enter target URL here!">
-<a class="hide" href="/uvnav">
+<a class="hide" href="#" id="pr-go1">
 <button class="button" style="vertical-align:middle" href="#"><span>Go! </span></button>
 </a>
 </div>
