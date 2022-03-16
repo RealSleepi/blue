@@ -245,7 +245,8 @@ input[type=URL] {
 <h1 class="italic">Currently the most powerful proxy avalible.</h1>
 <h1 class="italic">Support for YouTube, Reddit, Spotify and more.</h1>
 </div>
-<div class="center">
+<div class="center" id="pr-form">
+
 <input type="URL" id="pr-url" spellcheck="false" autocomplete="off" placeholder="Enter target URL here!">
 </div>
 <div id="snackbar">Error: Temporarily Disabled</div>
@@ -271,17 +272,17 @@ function closeNav() {
 }
 </script>
 <script>
-        prSet("ultraviolet");
-    </script>
-    <script src="/uv/uv.bundle.js"></script>
-    <script src="/uv/uv.config.js"></script>
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.navigator.serviceWorker.register('/sw.js', {
-                scope: __uv$config.prefix,
-            });
-        };
-    </script>
+prSet("ultraviolet");
+</script>
+<script src="/uv/uv.bundle.js"></script>
+<script src="/uv/uv.config.js"></script>
+<script>
+\\\if ('serviceWorker' in navigator) {
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix,
+    });
+};
+</script>
 
 </body>
 </html>
