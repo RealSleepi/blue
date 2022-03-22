@@ -264,7 +264,29 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
 }
 </script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDSOGslKkvfCaFq3oVOwQdyAC9fEV1pSyY",
+    authDomain: "blue-29f21.firebaseapp.com",
+    projectId: "blue-29f21",
+    storageBucket: "blue-29f21.appspot.com",
+    messagingSenderId: "789432633678",
+    appId: "1:789432633678:web:b59e60676be42fcd3c361f",
+    measurementId: "G-8QTG6R2K7E"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 </html>
 
